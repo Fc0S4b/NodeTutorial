@@ -1,3 +1,4 @@
+// existen módulos hechos de forma previa y que se importan desde la biblioteca de node, visita los docs de node para ver más módulos. En este tutorial se verán módulos de operating system (os), fileSystem (fs), de ruta path y http
 const os = require('os')
 
 // info about current user
