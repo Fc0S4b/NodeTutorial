@@ -5,4 +5,4 @@ function addValues() {
   console.log(`the sum is : ${num1 + num2}`)
 }
 
-addValues()
+addValues() //se va a ejecutar en donde se importe
