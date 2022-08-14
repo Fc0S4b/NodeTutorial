@@ -10,3 +10,8 @@ writeFileSync(
 );
 console.log('done with this task');
 console.log('starting the next one');
+
+// inicialmente comienza con start
+// luego done with this task
+// luego starting the next one
+// se vuelve conflictivo si hay mas usuarios ejecutando acciones de forma sincrónica

@@ -30,3 +30,8 @@ readFile('./content/first.txt', 'utf8', (err, result) => {
   });
 });
 console.log('starting next task');
+
+// ejecución asíncrona
+// start
+// starting next task
+// done with this task
