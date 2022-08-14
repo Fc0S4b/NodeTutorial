@@ -19,8 +19,10 @@ customEmitter.on('response', (name, id) => {
   console.log(`data recieved user ${name} with id:${id}`);
 });
 
+// nada impide crear otra escucha al evento pero importa el orden en que se programan los on y emit
 customEmitter.on('response', () => {
   console.log('some other logic here');
 });
 // emitimos john 34 y el evento al que va dirigido
+// segundo y tercer argumento como parámetros que recibirá la callback de on
 customEmitter.emit('response', 'john', 34);
