@@ -20,6 +20,8 @@ const start = async () => {
 
 start()
 
+// setup promise
+// creamos una función para leer cualquier ruta de archivo:
 // const getText = (path) => {
 //   return new Promise((resolve, reject) => {
 //     readFile(path, 'utf8', (err, data) => {
@@ -31,6 +33,7 @@ start()
 //     })
 //   })
 // }
+// getText será una promise, por lo que tiene métodos de then y catch
 // getText('./content/first.txt')
 //   .then((result) => console.log(result))
 //   .catch((err) => console.log(err))
