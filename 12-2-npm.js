@@ -44,3 +44,11 @@ console.log(newItems); //[1,2,3,4]
 // Global install
 // npm install -g <packageName>
 // por lo general se hace con npx en la terminal para no tener que instalar de forma global la herramienta
+
+// package-lock.json
+// indica versiones para dependencias mas específicas
+// la versión que nos indica package.json es para hacer una diferencia entre la versión que usa la persona la app vs la persona que creó la app
+// 4.17.20
+// el primer número indica grandes cambios
+// el segundo es un cambio menor, por lo que es retrocompatible
+// el tercer número es para arreglos de bugs
