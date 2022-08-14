@@ -7,6 +7,12 @@ const server = http.createServer((req, res) => {
   //     res.end('Welcome to our home page')
   //   }
   //   if (req.url === '/about') {
+  //  BLOCKING CODE!! este código bloqueará cualquier solicitud que no sea about, ya que para resolver otras solicitudes, primero deberá resolver este for que tiene como propósito relantizar el flujo de la respuestas a otras solicitudes, por eso es mejor la configuración asíncrona 
+  // for (let i = 0; i<1000; i++){
+  // for(let j=0; j < 1000; j++){
+  //  console.log(`${i} ${j}`)
+  // }
+  // }
   //     res.end('Here is our short history')
   //   }
   //   res.end(`
