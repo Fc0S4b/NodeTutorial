@@ -9,9 +9,9 @@ const { createReadStream } = require('fs');
 
 // default 64kb : lee archivos hasta 64 kb
 // last buffer - remainder : en la última ejecución, se muestra el resto del archivo (menos de 64kb)
-// highWaterMark - control size
+// highWaterMark - control size : como controlamos la cantidad de flujo:
 // const stream = createReadStream('./content/big.txt', { highWaterMark: 90000 })
-// const stream = createReadStream('../content/big.txt', { encoding: 'utf8' })
+// const stream = createReadStream('../content/big.txt', { encoding: 'utf8' }) //para codificar
 // debemos pasar el path
 const stream = createReadStream('./content/big.txt');
 // acceso a emitters on-emit
@@ -19,4 +19,5 @@ const stream = createReadStream('./content/big.txt');
 stream.on('data', (result) => {
   console.log(result);
 });
+// manejo del error en los streams, debe ser con el evento error
 stream.on('error', (err) => console.log(err));
