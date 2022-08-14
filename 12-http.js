@@ -2,6 +2,7 @@ const http = require('http');
 // createServer recibe req que es el método http y res es lo que mandamos de vuelta
 const server = http.createServer((req, res) => {
   // res.write('mensaje que se ve en el puerto 5000') //write es otro método
+  // cnsole.log(req) //objeto gigante, interesa ver req.url para manejar estados dependiendo del url. res.end para ver la respuesta.
   //   if (req.url === '/') {
   //     res.end('Welcome to our home page')
   //   }
@@ -19,6 +20,7 @@ const server = http.createServer((req, res) => {
   //  IF YOU GET ERRORS WHILE USING ABOVE SETUP,
   // SWITCH TO IF, ELSE IF, ELSE (BELOW)
   // WE COVER THE CAUSE, LATER IN EXPRESS TUTORIAL
+  // evaluamos cada estado de req.url para responder de acuerdo a esa url
   if (req.url === '/') {
     res.end('Welcome to our home page');
   } else if (req.url === '/about') {
