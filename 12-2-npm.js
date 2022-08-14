@@ -40,3 +40,7 @@ console.log(newItems); //[1,2,3,4]
 // para instalarlo npm i nodemon -D (para indicar que es devDependencies) o nodemon --save-dev. No es necesario nodemon en producción, solo en devDependencies. Acá se isntalan también paquetes de testeo, lintang, formating, etc.
 // se configura el scripts como "start": "node app.js" que correrá con npm start, también tiene "dev": "nodemon app.js" que se ejecutará con npm run nameOfCommand (ejemplo npm run dev), esto hace que se ejecute app.js por cada cambio en tiempo real. Cancela con ctrl+c
 // para desinstalar paquete npm uninstall packageName, otra forma es eliminar node_modules y package-lock.json y borrar la dependencia en package.json, luego ejecutar npm install
+
+// Global install
+// npm install -g <packageName>
+// por lo general se hace con npx en la terminal para no tener que instalar de forma global la herramienta
