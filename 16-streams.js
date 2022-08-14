@@ -7,13 +7,15 @@
 // streams se extienden a la clase de emitters. Son built-in
 const { createReadStream } = require('fs');
 
-// default 64kb
-// last buffer - remainder
+// default 64kb : lee archivos hasta 64 kb
+// last buffer - remainder : en la última ejecución, se muestra el resto del archivo (menos de 64kb)
 // highWaterMark - control size
 // const stream = createReadStream('./content/big.txt', { highWaterMark: 90000 })
 // const stream = createReadStream('../content/big.txt', { encoding: 'utf8' })
+// debemos pasar el path
 const stream = createReadStream('./content/big.txt');
-
+// acceso a emitters on-emit
+// tipo de evento "data"
 stream.on('data', (result) => {
   console.log(result);
 });
