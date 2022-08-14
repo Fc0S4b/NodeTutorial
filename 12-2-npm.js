@@ -34,3 +34,9 @@ console.log(newItems); //[1,2,3,4]
 // crea un .gitignore para no subir los node_modules
 // en .gitignore escribe /node_modules, este archivo debe estar en root
 // al bajar o clonar el proyecto desde github, solo debes ejecutar npm install para instalar las dependencias
+
+// nodemon
+// nos mostrará nuestros archivos y luego reiniciará app para no tener que escribir node a cada rato
+// para instalarlo npm i nodemon -D (para indicar que es devDependencies) o nodemon --save-dev. No es necesario nodemon en producción, solo en devDependencies. Acá se isntalan también paquetes de testeo, lintang, formating, etc.
+// se configura el scripts como "start": "node app.js" que correrá con npm start, también tiene "dev": "nodemon app.js" que se ejecutará con npm run nameOfCommand (ejemplo npm run dev), esto hace que se ejecute app.js por cada cambio en tiempo real. Cancela con ctrl+c
+// para desinstalar paquete npm uninstall packageName, otra forma es eliminar node_modules y package-lock.json y borrar la dependencia en package.json, luego ejecutar npm install
